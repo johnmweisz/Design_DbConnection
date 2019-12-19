@@ -7,10 +7,9 @@ namespace Design_DbConnection
         protected string ConnectionString { get; }
         protected TimeSpan Timeout { get; }
 
-        protected DbConnection(string connection) 
+        protected DbConnection(string connection)
             : this(connection, TimeSpan.FromMilliseconds(2000))
         {
-
         }
 
         protected DbConnection(string connection, TimeSpan timeout)

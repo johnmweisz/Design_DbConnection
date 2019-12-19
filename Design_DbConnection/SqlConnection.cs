@@ -4,11 +4,11 @@ namespace Design_DbConnection
 {
     class SqlConnection : DbConnection
     {
-        public SqlConnection(string connection, TimeSpan timeout) 
+        public SqlConnection(string connection, TimeSpan timeout)
             : base(connection, timeout)
         {
-            
         }
+
         public override void Open()
         {
             Console.WriteLine($"Opening Sql Connection {ConnectionString} within {Timeout}");

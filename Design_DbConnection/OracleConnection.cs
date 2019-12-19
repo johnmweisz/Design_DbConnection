@@ -4,11 +4,11 @@ namespace Design_DbConnection
 {
     class OracleConnection : DbConnection
     {
-        public OracleConnection(string connection, TimeSpan timeout) 
+        public OracleConnection(string connection, TimeSpan timeout)
             : base(connection, timeout)
         {
-            
         }
+
         public override void Open()
         {
             Console.WriteLine($"Opening Oracle Connection {ConnectionString} within {Timeout}");
