@@ -11,7 +11,7 @@ namespace Design_DbConnection
         }
         public override void Open()
         {
-            Console.WriteLine($"Opening Oracle Connection {ConnectionString} within {Timeout} milliseconds");
+            Console.WriteLine($"Opening Oracle Connection {ConnectionString} within {Timeout}");
         }
 
         public override void Close()
