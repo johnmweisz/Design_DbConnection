@@ -10,12 +10,12 @@ namespace Design_DbConnection
     {
         static void Main(string[] args)
         {
-            var Sql = new SqlConnection("testingconnectionstring", TimeSpan.FromMilliseconds(10000));
-            Sql.Open();
-            Sql.Close();
-            var Oracle = new OracleConnection("stringtotest", TimeSpan.FromMilliseconds(5000));
-            Oracle.Open();
-            Oracle.Close();
+            var sql = new SqlConnection("testingconnectionstring", TimeSpan.FromMilliseconds(10000));
+            sql.Open();
+            sql.Close();
+            var oracle = new OracleConnection("stringtotest", TimeSpan.FromMilliseconds(5000));
+            oracle.Open();
+            oracle.Close();
         }
     }
 }
