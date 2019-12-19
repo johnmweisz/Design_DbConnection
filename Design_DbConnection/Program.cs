@@ -11,7 +11,7 @@ namespace Design_DbConnection
         static void Main(string[] args)
         {
             var sql = new SqlConnection("testingconnectionstring", TimeSpan.FromMilliseconds(10000));
-            var oracle = new OracleConnection("stringtotest", TimeSpan.FromMilliseconds(5000));
+            var oracle = new OracleConnection("stringtotest");
             var sqlCommand = new DbCommand(sql, "Some beautiful query here");
             var oracleCommand = new DbCommand(oracle, "Some amazing query here");
             sqlCommand.Execute();

@@ -4,6 +4,10 @@ namespace Design_DbConnection
 {
     class OracleConnection : DbConnection
     {
+        public OracleConnection(string connection)
+            : base(connection)
+        {
+        }
         public OracleConnection(string connection, TimeSpan timeout)
             : base(connection, timeout)
         {

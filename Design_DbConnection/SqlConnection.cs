@@ -4,6 +4,10 @@ namespace Design_DbConnection
 {
     class SqlConnection : DbConnection
     {
+        public SqlConnection(string connection)
+            : base(connection)
+        {
+        }
         public SqlConnection(string connection, TimeSpan timeout)
             : base(connection, timeout)
         {
